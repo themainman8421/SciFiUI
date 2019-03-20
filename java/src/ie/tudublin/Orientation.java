@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Controls
+public class Orientation
 {
     private float x;
     private float y;
@@ -10,9 +10,8 @@ public class Controls
     private float height;
     UI ui;
 
-    public Controls(UI ui, float x, float y, float width, float height)
+    public Orientation(UI ui, float x, float y, float width, float height)
     {
-        this.ui = ui;
         this.x = x;
         this.y = y;
         this.width = width;
@@ -21,7 +20,7 @@ public class Controls
 
     public void render()
     {
-
+       ui.line(x, y, x, y); 
     }
 
     /**

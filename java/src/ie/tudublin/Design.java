@@ -22,10 +22,7 @@ public class Design
 
     public void render()
     {
-        ui.line(x, y, x, y + 700);
-        ui.line(x, y, x + 700, y);
-        ui.line(x + 700, y + 700, x + 700, y);
-        ui.line(x + 700, y + 700, x, y + 700);
+        ui.ellipse(x + 350 , y + 800, x + 1200, y + 700 );
     }
 
     /**
