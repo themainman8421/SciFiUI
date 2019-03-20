@@ -12,15 +12,17 @@ public class Orientation
 
     public Orientation(UI ui, float x, float y, float width, float height)
     {
+        this.ui = ui;
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+        
     }
 
     public void render()
     {
-       ui.line(x, y, x, y); 
+       ui.ellipse(x + 350, y + 650, 100, 100); 
     }
 
     /**
