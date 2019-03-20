@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PVector;
 
 public class Orientation
 {
@@ -24,12 +25,21 @@ public class Orientation
 
     public void render()
     {
-       ui.ellipse(x + 350, y + 650, 200, 200); 
+        ui.rotate(rotation);
+        ui.ellipse(x + 350, y + 650, 200, 200); 
     }
 
     public void updata()
     {
+		if (ui.checkKey('a'))
+		{
+			ui.rotation -= 0.1f;
+        }
 
+        if (ui.checkKey('d'))
+        {
+            rotation += 0.1f;
+        }
     }
 
 	/**
