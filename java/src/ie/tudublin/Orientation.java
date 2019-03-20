@@ -8,6 +8,7 @@ public class Orientation
     private float y;
     private float width;
     private float height;
+    private float rotation;
     UI ui;
 
     public Orientation(UI ui, float x, float y, float width, float height)
@@ -17,82 +18,106 @@ public class Orientation
         this.y = y;
         this.width = width;
         this.height = height;
+        this.rotation = rotation;
         
     }
 
     public void render()
     {
-       ui.ellipse(x + 350, y + 650, 100, 100); 
+       ui.ellipse(x + 350, y + 650, 200, 200); 
     }
 
-    /**
-     * @return the x
-     */
-    public float getX() {
-        return x;
+    public void updata()
+    {
+
     }
 
-    /**
-     * @param x the x to set
-     */
-    public void setX(float x) {
-        this.x = x;
-    }
+	/**
+	 * @return the x
+	 */
+	public float getX() {
+		return x;
+	}
 
-    /**
-     * @return the y
-     */
-    public float getY() {
-        return y;
-    }
+	/**
+	 * @param x the x to set
+	 */
+	public void setX(float x) {
+		this.x = x;
+	}
 
-    /**
-     * @param y the y to set
-     */
-    public void setY(float y) {
-        this.y = y;
-    }
+	/**
+	 * @return the y
+	 */
+	public float getY() {
+		return y;
+	}
 
-    /**
-     * @return the width
-     */
-    public float getWidth() {
-        return width;
-    }
+	/**
+	 * @param y the y to set
+	 */
+	public void setY(float y) {
+		this.y = y;
+	}
 
-    /**
-     * @param width the width to set
-     */
-    public void setWidth(float width) {
-        this.width = width;
-    }
+	/**
+	 * @return the width
+	 */
+	public float getWidth() {
+		return width;
+	}
 
-    /**
-     * @return the height
-     */
-    public float getHeight() {
-        return height;
-    }
+	/**
+	 * @param width the width to set
+	 */
+	public void setWidth(float width) {
+		this.width = width;
+	}
 
-    /**
-     * @param height the height to set
-     */
-    public void setHeight(float height) {
-        this.height = height;
-    }
+	/**
+	 * @return the height
+	 */
+	public float getHeight() {
+		return height;
+	}
 
-    /**
-     * @return the ui
-     */
-    public UI getUi() {
-        return ui;
-    }
+	/**
+	 * @param height the height to set
+	 */
+	public void setHeight(float height) {
+		this.height = height;
+	}
 
-    /**
-     * @param ui the ui to set
-     */
-    public void setUi(UI ui) {
-        this.ui = ui;
-    }
+	/**
+	 * @return the rotation
+	 */
+	public float getRotation() {
+		return rotation;
+	}
+
+	/**
+	 * @param rotation the rotation to set
+	 */
+	public void setRotation(float rotation) {
+		this.rotation = rotation;
+	}
+
+	/**
+	 * @return the ui
+	 */
+	public UI getUi() {
+		return ui;
+	}
+
+	/**
+	 * @param ui the ui to set
+	 */
+	public void setUi(UI ui) {
+		this.ui = ui;
+	}
+
+	
+
+    
 
 }
