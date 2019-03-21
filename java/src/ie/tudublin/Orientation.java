@@ -3,7 +3,7 @@ package ie.tudublin;
 import processing.core.PApplet;
 import processing.core.PVector;
 
-public class Orientation
+public class Orientation extends PApplet
 {
     private float x;
     private float y;
@@ -19,7 +19,7 @@ public class Orientation
         this.y = y;
         this.width = width;
         this.height = height;
-        this.rotation = rotation;
+        
         
     }
 
@@ -29,18 +29,18 @@ public class Orientation
         ui.ellipse(x + 350, y + 650, 200, 200); 
     }
 
-    public void updata()
+    public void update()
     {
 		if (ui.checkKey('a'))
 		{
-			ui.rotation -= 0.1f;
+			rotation -= 0.1f;
         }
 
         if (ui.checkKey('d'))
         {
             rotation += 0.1f;
         }
-    }
+	}
 
 	/**
 	 * @return the x

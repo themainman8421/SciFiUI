@@ -2,7 +2,7 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Controls
+public class FlightControls
 {
     private float x;
     private float y;
@@ -10,7 +10,7 @@ public class Controls
     private float height;
     UI ui;
 
-    public Controls(UI ui, float x, float y, float width, float height)
+    public FlightControls(UI ui, float x, float y, float width, float height)
     {
         this.ui = ui;
         this.x = x;

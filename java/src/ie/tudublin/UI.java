@@ -52,6 +52,7 @@ public class UI extends PApplet
 
         design.render();
         orientation.render();
+        orientation.update();
 
 
         if (checkKey(LEFT))
