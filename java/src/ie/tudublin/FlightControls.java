@@ -1,14 +1,17 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PVector;
 
-public class FlightControls
+public class FlightControls extends PApplet
 {
+    private PVector pos;
     private float x;
     private float y;
     private float width;
     private float height;
     UI ui;
+
 
     public FlightControls(UI ui, float x, float y, float width, float height)
     {
@@ -17,11 +20,12 @@ public class FlightControls
         this.y = y;
         this.width = width;
         this.height = height;
+        pos = new PVector(x, y);
     }
 
     public void render()
     {
-
+        ui.rect(x , y + 650, x, y);
     }
 
     /**
@@ -92,6 +96,20 @@ public class FlightControls
      */
     public void setUi(UI ui) {
         this.ui = ui;
+    }
+
+    /**
+     * @return the pos
+     */
+    public PVector getPos() {
+        return pos;
+    }
+
+    /**
+     * @param pos the pos to set
+     */
+    public void setPos(PVector pos) {
+        this.pos = pos;
     }
 
 }

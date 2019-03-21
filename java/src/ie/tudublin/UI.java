@@ -8,6 +8,7 @@ public class UI extends PApplet
     MovingCircle mc;
     Design design;
     Orientation orientation;
+    FlightControls flight;
 
     boolean[] keys = new boolean[1024];
 
@@ -40,6 +41,7 @@ public class UI extends PApplet
         mc = new MovingCircle(this, width / 2, height / 2, 50);
         design = new Design(this, 50, 50, 50, 50);
         orientation = new Orientation(this, 50, 50, 50 ,50);
+        flight = new FlightControls(this, 50, 50, 50, 50);
         }
 
     public void draw()
@@ -51,8 +53,11 @@ public class UI extends PApplet
         //mc.render();
 
         design.render();
+        
         orientation.render();
         orientation.update();
+
+        flight.render();
 
 
         if (checkKey(LEFT))
