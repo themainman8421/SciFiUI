@@ -5,60 +5,31 @@ import processing.core.PVector;
 
 public class Radar
 {
-    UI ui;
+    
     private float x;
     private float y;
-    private float diameter;
-    private float radius;
+    private float diamater;
     private float rotation;
     private PVector pos;
+    UI ui;
+    private float radius;
 
-
-    public Radar(UI ui, float x, float y, float diameter)
+    public Radar(UI ui, float x, float y, float diamater)
     {
         this.ui = ui;
         this.x = x;
         this.y = y;
-        this.diameter = diameter;
-        radius = (diameter / 2) - 30;
+        this.diamater = diamater;
         pos = new PVector(x, y);
+        radius = diamater / 2;
         
     }
 
     public void render()
     {
-        
-
-        ui.stroke(255);
-        ui.noFill();
-        ui.translate(pos.x, pos.y);
-        ui.ellipse(x, y, diameter, diameter);
-        ui.fill(255);
-       // ui.translate(pos.x, pos.y);
-        ui.rotate(rotation);
-        ui.line(x , y , x - radius  , y - radius );
-        ui.fill(255);
-    }
-
-    public void update()
-    {
-        this.x = (float) Math.sin(rotation);
-        this.y = - (float) Math.cos(rotation);
-        rotation += 0.1f; 
-    }
-
-    /**
-     * @return the ui
-     */
-    public UI getUi() {
-        return ui;
-    }
-
-    /**
-     * @param ui the ui to set
-     */
-    public void setUi(UI ui) {
-        this.ui = ui;
+        //ui.translate(x, y);
+        ui.ellipse(x + 650, y + 625, diamater, diamater);
+        ui.line(x + 650, y + 625, 700, 725);
     }
 
     /**
@@ -90,17 +61,59 @@ public class Radar
     }
 
     /**
-     * @return the diameter
+     * @return the diamater
      */
-    public float getDiameter() {
-        return diameter;
+    public float getDiamater() {
+        return diamater;
     }
 
     /**
-     * @param diameter the diameter to set
+     * @param diamater the diamater to set
      */
-    public void setDiameter(float diameter) {
-        this.diameter = diameter;
+    public void setDiamater(float diamater) {
+        this.diamater = diamater;
+    }
+
+    /**
+     * @return the rotation
+     */
+    public float getRotation() {
+        return rotation;
+    }
+
+    /**
+     * @param rotation the rotation to set
+     */
+    public void setRotation(float rotation) {
+        this.rotation = rotation;
+    }
+
+    /**
+     * @return the pos
+     */
+    public PVector getPos() {
+        return pos;
+    }
+
+    /**
+     * @param pos the pos to set
+     */
+    public void setPos(PVector pos) {
+        this.pos = pos;
+    }
+
+    /**
+     * @return the ui
+     */
+    public UI getUi() {
+        return ui;
+    }
+
+    /**
+     * @param ui the ui to set
+     */
+    public void setUi(UI ui) {
+        this.ui = ui;
     }
 
     /**
@@ -117,21 +130,10 @@ public class Radar
         this.radius = radius;
     }
 
-    /**
-     * @return the rotation
-     */
-    public float getRotation() {
-        return rotation;
-    }
+    
 
-    /**
-     * @param rotation the rotation to set
-     */
-    public void setRotation(float rotation) {
-        this.rotation = rotation;
-    }
+    
+
+
+
 }
-
-
-
-

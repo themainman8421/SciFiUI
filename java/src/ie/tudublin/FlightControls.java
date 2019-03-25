@@ -27,8 +27,8 @@ public class FlightControls
     {
         //ui.rect(x , y + 650, x, y);
         ui.rect(x  , y + 550, x + 100, y + 100);
+        ui.line(125, y +550, 125, 750);
     }
-
     /**
      * @return the x
      */

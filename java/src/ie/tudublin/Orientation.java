@@ -26,14 +26,14 @@ public class Orientation extends PApplet
     public void render()
     {
         ui.rotate(rotation);
-        ui.ellipse(x + 350, y + 650, 200, 200); 
+        ui.ellipse(x + 350, y + 600, 200, 200); 
     }
 
     public void update()
     {
 		if (ui.checkKey('a'))
 		{
-			rotation -= 0.1f;
+			rotation += 0.1f;
         }
 
         if (ui.checkKey('d'))
