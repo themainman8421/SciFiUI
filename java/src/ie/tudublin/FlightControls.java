@@ -1,9 +1,9 @@
 package ie.tudublin;
 
-import processing.core.PApplet;
+
 import processing.core.PVector;
 
-public class FlightControls extends PApplet
+public class FlightControls
 {
     private PVector pos;
     private float x;
@@ -25,7 +25,8 @@ public class FlightControls extends PApplet
 
     public void render()
     {
-        ui.rect(x , y + 650, x, y);
+        //ui.rect(x , y + 650, x, y);
+        ui.rect(x  , y + 550, x + 100, y + 100);
     }
 
     /**

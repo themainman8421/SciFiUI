@@ -9,6 +9,7 @@ public class UI extends PApplet
     Design design;
     Orientation orientation;
     FlightControls flight;
+    Radar radar;
 
     boolean[] keys = new boolean[1024];
 
@@ -42,28 +43,29 @@ public class UI extends PApplet
         design = new Design(this, 50, 50, 50, 50);
         orientation = new Orientation(this, 50, 50, 50 ,50);
         flight = new FlightControls(this, 50, 50, 50, 50);
-        }
+        radar = new Radar(this, 50, 50, 50);   
+    }
 
     public void draw()
     {
-        //background(0);
+        background(0);
         //b.render();
 
         //mc.update();
         //mc.render();
 
-        design.render();
+        //design.render();
         
-        orientation.render();
-        orientation.update();
+       // orientation.render();
+        //orientation.update();
 
-        flight.render();
+        //flight.render();
+
+        radar.render();
+        radar.update();
 
 
-        if (checkKey(LEFT))
-        {
-            System.out.println("Left arrow key pressed");
-        }
+        
     }
 }
 
