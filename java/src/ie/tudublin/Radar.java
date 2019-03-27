@@ -10,6 +10,7 @@ public class Radar
     private float y;
     private float diamater;
     private float rotation;
+    private PVector pos;
     
     UI ui;
     private float radius;
@@ -20,16 +21,25 @@ public class Radar
         this.x = x;
         this.y = y;
         this.diamater = diamater;
-        
+        pos = new PVector(x, y);
         radius = diamater / 2;
         
     }
 
     public void render()
     {
-        //ui.translate(x, y);
-        ui.ellipse(x + 650, y + 625, diamater, diamater);
-        ui.line(x + 650, y + 625, 700, 725);
+        ui.translate(pos.x, pos.y);
+        ui.ellipse(x , y , diamater, diamater);
+        ui.rotate(rotation);
+        ui.line(x, y, radius, radius - 40);
+        ui.fill(255);
+    }
+
+    public void update()
+    {
+        this.x = (float) Math.sin(rotation);
+        this.y = - (float) Math.cos(rotation);
+        rotation += 0.05f;
     }
 
     /**
@@ -116,6 +126,20 @@ public class Radar
      */
     public void setRadius(float radius) {
         this.radius = radius;
+    }
+
+    /**
+     * @return the pos
+     */
+    public PVector getPos() {
+        return pos;
+    }
+
+    /**
+     * @param pos the pos to set
+     */
+    public void setPos(PVector pos) {
+        this.pos = pos;
     }
 
     

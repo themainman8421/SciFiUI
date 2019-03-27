@@ -1,26 +1,24 @@
 package ie.tudublin;
 
-import processing.core.PApplet;
 import processing.core.PVector;
 
 public class Orientation
 {
     private float x;
     private float y;
-    private float width;
-    private float height;
 	private float rotation;
 	private PVector pos;
+	private float diameter;
+	
     UI ui;
 
-    public Orientation(UI ui, float x, float y, float width, float height)
+    public Orientation(UI ui, float x, float y, float diameter)
     {
         this.ui = ui;
         this.x = x;
-        this.y = y;
-        this.width = width;
-		this.height = height;
-		pos = new PVector(x, y);
+		this.y = y;
+		this.diameter = diameter;
+		this.pos = new PVector(x, y);
 
         
         
@@ -29,20 +27,22 @@ public class Orientation
     public void render()
     {
 		ui.translate(pos.x , pos.y);
-        ui.rotate(rotation);
-        ui.ellipse(pos.x, pos.y, 200, 200); 
+		ui.rotate(rotation);
+		ui.ellipse(x, y, diameter, diameter);
+         
     }
 
     public void update()
     {
 		if (ui.checkKey('a'))
 		{
+			
 			rotation += 0.1f;
         }
 
         if (ui.checkKey('d'))
         {
-            rotation -= 0.1f;
+            rotation += 0.1f;
         }
 	}
 
@@ -74,33 +74,9 @@ public class Orientation
 		this.y = y;
 	}
 
-	/**
-	 * @return the width
-	 */
-	public float getWidth() {
-		return width;
-	}
+	
 
-	/**
-	 * @param width the width to set
-	 */
-	public void setWidth(float width) {
-		this.width = width;
-	}
-
-	/**
-	 * @return the height
-	 */
-	public float getHeight() {
-		return height;
-	}
-
-	/**
-	 * @param height the height to set
-	 */
-	public void setHeight(float height) {
-		this.height = height;
-	}
+	
 
 	/**
 	 * @return the rotation
@@ -117,6 +93,34 @@ public class Orientation
 	}
 
 	/**
+	 * @return the pos
+	 */
+	public PVector getPos() {
+		return pos;
+	}
+
+	/**
+	 * @param pos the pos to set
+	 */
+	public void setPos(PVector pos) {
+		this.pos = pos;
+	}
+
+	/**
+	 * @return the diameter
+	 */
+	public float getDiameter() {
+		return diameter;
+	}
+
+	/**
+	 * @param diameter the diameter to set
+	 */
+	public void setDiameter(float diameter) {
+		this.diameter = diameter;
+	}
+
+	/**
 	 * @return the ui
 	 */
 	public UI getUi() {
@@ -129,6 +133,8 @@ public class Orientation
 	public void setUi(UI ui) {
 		this.ui = ui;
 	}
+
+	
 
 	
 

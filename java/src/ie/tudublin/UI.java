@@ -5,7 +5,7 @@ import processing.core.PApplet;
 public class UI extends PApplet
 {
     Button b;
-    MovingCircle mc;
+    //MovingCircle mc;
     Design design;
     Orientation orientation;
     FlightControls flight;
@@ -40,11 +40,11 @@ public class UI extends PApplet
     public void setup()
     {
         b = new Button(this, 50, 50, 100, 50, "I am a button");
-        mc = new MovingCircle(this, width / 2, height / 2, 50);
+       // mc = new MovingCircle(this, width / 2, height / 2, 50);
         design = new Design(this, 50, 50, 50, 50);
-        orientation = new Orientation(this, 0, 0, 50, 50);
+        orientation = new Orientation(this, 0, 0, 200);
         flight = new FlightControls(this, 50, 50, 50, 50);
-        radar = new Radar(this, 50, 50, 100);
+        radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
     }
 
@@ -64,6 +64,7 @@ public class UI extends PApplet
         flight.render();
 
         radar.render();
+        radar.update();
 
         warp.render();
 

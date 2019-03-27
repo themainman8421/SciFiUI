@@ -5,7 +5,7 @@ import processing.core.PVector;
 
 public class FlightControls
 {
-    private PVector pos;
+    
     private float b;
     private float a;
     private float width;
@@ -21,7 +21,7 @@ public class FlightControls
         this.b = b;
         this.width = width;
         this.height = height;
-        pos = new PVector(a, b);
+        
         
     }
 
@@ -32,19 +32,7 @@ public class FlightControls
         ui.line(125, b +550, 125, 750);
     }
 
-    /**
-     * @return the pos
-     */
-    public PVector getPos() {
-        return pos;
-    }
-
-    /**
-     * @param pos the pos to set
-     */
-    public void setPos(PVector pos) {
-        this.pos = pos;
-    }
+   
 
     /**
      * @return the b
