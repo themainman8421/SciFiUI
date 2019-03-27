@@ -3,13 +3,14 @@ package ie.tudublin;
 import processing.core.PApplet;
 import processing.core.PVector;
 
-public class Orientation extends PApplet
+public class Orientation
 {
     private float x;
     private float y;
     private float width;
     private float height;
-    private float rotation;
+	private float rotation;
+	private PVector pos;
     UI ui;
 
     public Orientation(UI ui, float x, float y, float width, float height)
@@ -18,15 +19,18 @@ public class Orientation extends PApplet
         this.x = x;
         this.y = y;
         this.width = width;
-        this.height = height;
+		this.height = height;
+		pos = new PVector(x, y);
+
         
         
     }
 
     public void render()
     {
+		ui.translate(pos.x + 400, pos.y + 650);
         ui.rotate(rotation);
-        ui.ellipse(x + 350, y + 600, 200, 200); 
+        ui.ellipse(pos.x, pos.y, 200, 200); 
     }
 
     public void update()
@@ -38,7 +42,7 @@ public class Orientation extends PApplet
 
         if (ui.checkKey('d'))
         {
-            rotation += 0.1f;
+            rotation -= 0.1f;
         }
 	}
 

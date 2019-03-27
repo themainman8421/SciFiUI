@@ -10,7 +10,7 @@ public class Radar
     private float y;
     private float diamater;
     private float rotation;
-    private PVector pos;
+    
     UI ui;
     private float radius;
 
@@ -20,7 +20,7 @@ public class Radar
         this.x = x;
         this.y = y;
         this.diamater = diamater;
-        pos = new PVector(x, y);
+        
         radius = diamater / 2;
         
     }
@@ -88,19 +88,7 @@ public class Radar
         this.rotation = rotation;
     }
 
-    /**
-     * @return the pos
-     */
-    public PVector getPos() {
-        return pos;
-    }
-
-    /**
-     * @param pos the pos to set
-     */
-    public void setPos(PVector pos) {
-        this.pos = pos;
-    }
+    
 
     /**
      * @return the ui

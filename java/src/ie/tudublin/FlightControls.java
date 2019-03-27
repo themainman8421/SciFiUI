@@ -20,7 +20,7 @@ public class FlightControls
         this.y = y;
         this.width = width;
         this.height = height;
-        pos = new PVector(x, y);
+        
     }
 
     public void render()
