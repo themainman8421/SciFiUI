@@ -6,55 +6,72 @@ import processing.core.PVector;
 public class FlightControls
 {
     private PVector pos;
-    private float x;
-    private float y;
+    private float b;
+    private float a;
     private float width;
     private float height;
+    
     UI ui;
 
 
-    public FlightControls(UI ui, float x, float y, float width, float height)
+    public FlightControls(UI ui, float a, float b, float width, float height)
     {
         this.ui = ui;
-        this.x = x;
-        this.y = y;
+        this.a = a;
+        this.b = b;
         this.width = width;
         this.height = height;
+        pos = new PVector(a, b);
         
     }
 
     public void render()
     {
         //ui.rect(x , y + 650, x, y);
-        ui.rect(x  , y + 550, x + 100, y + 100);
-        ui.line(125, y +550, 125, 750);
-    }
-    /**
-     * @return the x
-     */
-    public float getX() {
-        return x;
+        ui.rect(a  , b + 550, a + 100, b + 100);
+        ui.line(125, b +550, 125, 750);
     }
 
     /**
-     * @param x the x to set
+     * @return the pos
      */
-    public void setX(float x) {
-        this.x = x;
+    public PVector getPos() {
+        return pos;
     }
 
     /**
-     * @return the y
+     * @param pos the pos to set
      */
-    public float getY() {
-        return y;
+    public void setPos(PVector pos) {
+        this.pos = pos;
     }
 
     /**
-     * @param y the y to set
+     * @return the b
      */
-    public void setY(float y) {
-        this.y = y;
+    public float getB() {
+        return b;
+    }
+
+    /**
+     * @param b the b to set
+     */
+    public void setB(float b) {
+        this.b = b;
+    }
+
+    /**
+     * @return the a
+     */
+    public float getA() {
+        return a;
+    }
+
+    /**
+     * @param a the a to set
+     */
+    public void setA(float a) {
+        this.a = a;
     }
 
     /**
@@ -98,19 +115,6 @@ public class FlightControls
     public void setUi(UI ui) {
         this.ui = ui;
     }
-
-    /**
-     * @return the pos
-     */
-    public PVector getPos() {
-        return pos;
-    }
-
-    /**
-     * @param pos the pos to set
-     */
-    public void setPos(PVector pos) {
-        this.pos = pos;
-    }
+   
 
 }

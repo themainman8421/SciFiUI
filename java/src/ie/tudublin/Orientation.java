@@ -28,7 +28,7 @@ public class Orientation
 
     public void render()
     {
-		ui.translate(pos.x + 400, pos.y + 650);
+		ui.translate(pos.x , pos.y);
         ui.rotate(rotation);
         ui.ellipse(pos.x, pos.y, 200, 200); 
     }
