@@ -26,9 +26,11 @@ public class Orientation
 
     public void render()
     {
-		ui.translate(pos.x , pos.y);
+		ui.pushMatrix();
+		ui.translate(pos.x + ui.width / 2 , pos.y + 650);
 		ui.rotate(rotation);
 		ui.ellipse(x, y, diameter, diameter);
+		ui.popMatrix();
          
     }
 

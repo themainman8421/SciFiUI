@@ -24,11 +24,12 @@ public class Button
     public void render()
     {
     
-        
+        ui.fill(0);
         ui.rect(x, y, width, height);
+        
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         
-        ui.stroke(0);
+    
         ui.text(text, x + width * 0.5f, y + height * 0.5f);
         
     }

@@ -30,6 +30,7 @@ public class Warp
     {
         
         ui.rect(x + 50, y, width, height);
+        ui.fill(0);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);
         ui.text(text, x + width, y + height * 0.5f);
     }
