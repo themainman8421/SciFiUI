@@ -30,5 +30,6 @@ public class Button
         
         ui.stroke(0);
         ui.text(text, x + width * 0.5f, y + height * 0.5f);
+        
     }
 }

@@ -58,15 +58,20 @@ public class UI extends PApplet
 
         design.render();
         
-        orientation.render();
-        orientation.update();
+        //orientation.render();
+        //orientation.update();
 
         flight.render();
+
+        warp.render();
 
         radar.render();
         radar.update();
 
-        warp.render();
+        orientation.render();
+        orientation.update();
+
+       // warp.render();
 
 
         
