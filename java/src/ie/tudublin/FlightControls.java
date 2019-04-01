@@ -27,8 +27,26 @@ public class FlightControls
     public void render()
     {
         //ui.rect(x , y + 650, x, y);
-        ui.rect(a  , b + 550, a + 100, b + 100);
-        ui.line(125, b +550, 125, 750);
+        ui.rect(50  , 600, 150, 150);
+        ui.line(125, 600, 125, 750);
+        ui.line(50, a + 700, 125, a + 700);
+        ui.line(125, a + 700, 200, a + 700);
+    }
+
+    public void update()
+    {
+        if (ui.checkKey('w'))
+		{
+			
+            a -= 0.1f;
+            
+        
+        }
+
+        if (ui.checkKey('s'))
+        {
+            a += 0.1f;
+        }
     }
 
    
