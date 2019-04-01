@@ -38,7 +38,7 @@ public class Stars
         if (ui.checkKey('a'))
 		{
 			
-            x += 0.1f;
+            x -= 0.1f;
             
         
         }

@@ -54,23 +54,23 @@ public class UI extends PApplet
     {
         //background(0);
 
-        //stars.render();
-        //stars.update();
+        stars.render();
+        stars.update();
 
-        //design.render();
+        design.render();
         
         
 
         flight.render();
         flight.update();
 
-        //warp.render();
+        warp.render();
 
-        //radar.render();
-        //radar.update();
+        radar.render();
+        radar.update();
 
-        //orientation.render();
-        //orientation.update();
+        orientation.render();
+        orientation.update();
 
         //stars.render();
 

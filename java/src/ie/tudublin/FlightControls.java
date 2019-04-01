@@ -29,24 +29,40 @@ public class FlightControls
         //ui.rect(x , y + 650, x, y);
         ui.rect(50  , 600, 150, 150);
         ui.line(125, 600, 125, 750);
+        //ui.colorMode(HSB);
         ui.line(50, a + 700, 125, a + 700);
-        ui.line(125, a + 700, 200, a + 700);
+        ui.line(125, b + 700, 200, b + 700);
     }
 
     public void update()
     {
-        if (ui.checkKey('w'))
+        if (ui.checkKey('a'))
 		{
 			
-            a -= 0.1f;
-            
+            a += 0.1f;
+            b -= 0.1f;
         
+        }
+
+        if (ui.checkKey('d'))
+        {
+            a -= 0.1f;
+            b += 0.1f;
+        }
+
+        if (ui.checkKey('w'))
+        {
+            a -= 0.1f;
+            b -= 0.1f;
         }
 
         if (ui.checkKey('s'))
         {
             a += 0.1f;
+            b += 0.1f;
         }
+
+        
     }
 
    
