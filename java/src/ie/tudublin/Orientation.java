@@ -1,36 +1,40 @@
 package ie.tudublin;
 
+import processing.core.PApplet;
 import processing.core.PVector;
 
 public class Orientation
 {
     private float x;
     private float y;
-	private float rotation;
-	private PVector pos;
-	private float diameter;
-	
+		private float rotation;
+		private PVector pos;
+		private float diameter;
+		private String text;
     UI ui;
 
-    public Orientation(UI ui, float x, float y, float diameter)
+    public Orientation(UI ui, float x, float y, float diameter, String text)
     {
-        this.ui = ui;
-        this.x = x;
-		this.y = y;
-		this.diameter = diameter;
-		this.pos = new PVector(x, y);
-
+      this.ui = ui;
+      this.x = x;
+			this.y = y;
+			this.diameter = diameter;
+			this.pos = new PVector(x, y);
+			this.text = text;
         
         
     }
 
     public void render()
     {
-		ui.pushMatrix();
-		ui.translate(pos.x + ui.width / 2 , pos.y + 650);
-		ui.rotate(rotation);
-		ui.ellipse(x, y, diameter, diameter);
-		ui.popMatrix();
+			ui.pushMatrix();
+			ui.translate(pos.x + ui.width / 2 , pos.y + 650);
+			ui.rotate(rotation);
+			ui.ellipse(x, y, diameter, diameter);
+		//	ui.fill(123);
+			ui.textAlign(PApplet.CENTER, PApplet.CENTER);
+    	ui.text(text, x, y);
+			ui.popMatrix();
          
     }
 
@@ -134,6 +138,20 @@ public class Orientation
 	 */
 	public void setUi(UI ui) {
 		this.ui = ui;
+	}
+
+	/**
+	 * @return the text
+	 */
+	public String getText() {
+		return text;
+	}
+
+	/**
+	 * @param text the text to set
+	 */
+	public void setText(String text) {
+		this.text = text;
 	}
 
 	
