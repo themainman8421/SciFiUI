@@ -41,6 +41,7 @@ public class FlightControls
 			
             a += 0.1f;
             b -= 0.1f;
+            
         
         }
 
@@ -52,14 +53,17 @@ public class FlightControls
 
         if (ui.checkKey('w'))
         {
+            
             a -= 0.1f;
             b -= 0.1f;
         }
 
         if (ui.checkKey('s'))
         {
-            a += 0.1f;
-            b += 0.1f;
+            
+                a += 0.1f;
+                b += 0.1f;
+            
         }
 
         

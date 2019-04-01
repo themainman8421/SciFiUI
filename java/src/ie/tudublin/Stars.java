@@ -5,9 +5,9 @@ public class Stars
 {
     private float x;
     private float y;
-	private float diameter;
+    private float diameter;
+    private float stars;
     UI ui;
-    private float noOfCircles;
 
     public Stars(UI ui, float x, float y, float diameter)
     {
@@ -15,16 +15,24 @@ public class Stars
         this.x = x;
         this.y = y;
         this.diameter = diameter;
-        this.noOfCircles = 20;        
+        this.stars = 200;       
         
     }
 
     public void render()
     {
         
-            ui.ellipse(x, y, diameter, diameter);
-            ui.ellipse(x + 50, y, diameter, diameter);
-            ui.ellipse(x + 600, y, diameter, diameter);
+            for(int i = 0; i < stars; i++)
+            {
+                //ui.map(x, 0, stars, 200, 600);
+                ui.ellipse(x, y, diameter, diameter);
+                x += 20;
+            
+                
+            }
+
+            
+            
             
             
         

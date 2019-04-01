@@ -47,15 +47,15 @@ public class UI extends PApplet
         flight = new FlightControls(this, 50, 50, 50, 50);
         radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
-        stars = new Stars(this, 200, 300, 10);
+        stars = new Stars(this, 10, 10, 10);
     }
 
     public void draw()
     {
-        //background(0);
+        background(0);
 
         stars.render();
-        stars.update();
+        //stars.update();
 
         design.render();
         
@@ -72,7 +72,6 @@ public class UI extends PApplet
         orientation.render();
         orientation.update();
 
-        //stars.render();
 
         
 
