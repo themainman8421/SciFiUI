@@ -1,6 +1,5 @@
 package ie.tudublin;
 
-import java.awt.Stroke;
 
 import processing.core.PApplet;
 import processing.core.PVector;

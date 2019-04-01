@@ -11,6 +11,7 @@ public class UI extends PApplet
     FlightControls flight;
     Radar radar;
     Warp warp;
+    Stars stars;
 
     boolean[] keys = new boolean[1024];
 
@@ -46,32 +47,33 @@ public class UI extends PApplet
         flight = new FlightControls(this, 50, 50, 50, 50);
         radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
+        stars = new Stars(this, 200, 300, 10);
     }
 
     public void draw()
     {
         background(0);
-        //b.render();
 
-        //mc.update();
-        //mc.render();
+        stars.render();
+        stars.update();
 
         design.render();
         
-        //orientation.render();
-        //orientation.update();
+        
 
-        flight.render();
+        //flight.render();
 
-        warp.render();
+        //warp.render();
 
-        radar.render();
-        radar.update();
+        //radar.render();
+        //radar.update();
 
         orientation.render();
         orientation.update();
 
-       
+        //stars.render();
+
+        
 
 
         
