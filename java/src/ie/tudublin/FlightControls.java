@@ -27,8 +27,10 @@ public class FlightControls
     int value = 0;
     public void render()
     {
+        //ui.fill(value, 255, 255);
         ui.rect(50  , 600, 150, 150);
-        ui.line(125, 600, 125, 750); 
+        ui.line(125, 600, 125, 750);    
+        //ui.fill(value, 255, 255); 
         ui.line(50, a + 700, 125, a + 700);
         ui.line(125, b + 700, 200, b + 700);
     }
@@ -71,7 +73,7 @@ public class FlightControls
                 
             
         }
-        
+        //value = (int) (b % 255);
         
     }
 
