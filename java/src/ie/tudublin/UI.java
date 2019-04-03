@@ -22,7 +22,7 @@ public class UI extends PApplet
     
     public void keyReleased()
     {
-        keys[keyCode] = true;
+        keys[keyCode] = false;
     }
 
     public boolean checkKey(int c)
@@ -48,31 +48,33 @@ public class UI extends PApplet
         radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
         stars = new Stars(this, 10, 10, 10);
+
+        colorMode(HSB, 255, 255, 255);
     }
 
     public void draw()
     {
-        background(0);
+         background(0);
 
-        stars.render();
-        //stars.update();
+         stars.render();
+         stars.update();
 
-        design.render();
+         design.render();
         
         
 
-        flight.render();
-        flight.update();
+         flight.render();
+         flight.update();
 
-        warp.render();
+         warp.render();
 
-        radar.render();
-        radar.update();
+         radar.render();
+         radar.update();
 
-        orientation.render();
-        orientation.update();
+         orientation.render();
+         orientation.update();
 
-
+        
         
 
 
