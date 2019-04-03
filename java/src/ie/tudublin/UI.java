@@ -49,7 +49,7 @@ public class UI extends PApplet
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
         stars = new Stars(this, 10, 10, 10);
 
-        colorMode(HSB, 255, 255, 255);
+        //colorMode(HSB, 255, 255, 255);
     }
 
     public void draw()
@@ -63,16 +63,16 @@ public class UI extends PApplet
         
         
 
-         flight.render();
-         flight.update();
+          flight.render();
+          flight.update();
 
-         warp.render();
+          warp.render();
 
-         radar.render();
-         radar.update();
+          radar.render();
+          radar.update();
 
-         orientation.render();
-         orientation.update();
+          orientation.render();
+          orientation.update();
 
         
         

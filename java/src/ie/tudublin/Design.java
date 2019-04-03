@@ -22,7 +22,7 @@ public class Design
 
     public void render()
     {
-        
+        ui.fill(160);
         ui.ellipse(x + 350 , y + 800, x + 1200, y + 700 );
         ui.ellipse(x + 350, y, x + 1000, y + 300);
         

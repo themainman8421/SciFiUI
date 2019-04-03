@@ -27,7 +27,7 @@ public class Warp
 
     public void render()
     {
-        
+        ui.fill(255, 0 ,0);
         ui.rect(x + 50, y, width, height);
         ui.fill(0);
         ui.textAlign(PApplet.CENTER, PApplet.CENTER);

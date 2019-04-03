@@ -6,7 +6,7 @@ public class Stars
     private float x;
     private float y;
     private float diameter;
-    private float stars;
+    //private float stars;
     UI ui;
     private float radius;
 
@@ -16,7 +16,7 @@ public class Stars
         this.x = x;
         this.y = y;
         this.diameter = diameter;
-        this.stars = 20; 
+        //this.stars = 20; 
         radius = diameter / 2;      
         
     }
@@ -29,8 +29,9 @@ public class Stars
 		{
 			for(int j = 0 ; j < 38 ; j ++)
 			{
+                ui.fill(255);
 				float x = radius + (i * 21);
-				float y = radius + (j * 21);
+                float y = radius + (j * 21);
 				ui.ellipse(x, y, diameter, diameter);
 			}
 		}
@@ -53,7 +54,7 @@ public class Stars
         if (ui.checkKey('a'))
 		{
 			
-            x -= 0.1f;
+            x -= 20;
             
         
         }
