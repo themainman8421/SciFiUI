@@ -11,7 +11,8 @@ public class Orientation
 		private PVector pos;
 		private float diameter;
 		private String text;
-    UI ui;
+		UI ui;
+		private float radius;
 
     public Orientation(UI ui, float x, float y, float diameter, String text)
     {
@@ -21,6 +22,7 @@ public class Orientation
 			this.diameter = diameter;
 			this.pos = new PVector(x, y);
 			this.text = text;
+			radius = diameter /2;
         
         
     }
@@ -29,8 +31,10 @@ public class Orientation
     {
 			ui.pushMatrix();
 			ui.translate(pos.x + ui.width / 2 , pos.y + 650);
-			ui.rotate(rotation);
+			//ui.rotate(rotation);
 			ui.ellipse(x, y, diameter, diameter);
+			ui.rotate(rotation);
+			ui.line(x, y, radius - 30, radius - 30);
 		//	ui.fill(123);
 			ui.textAlign(PApplet.CENTER, PApplet.CENTER);
     	ui.text(text, x, y);
