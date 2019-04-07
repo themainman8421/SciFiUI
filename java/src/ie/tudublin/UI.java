@@ -47,7 +47,7 @@ public class UI extends PApplet
         flight = new FlightControls(this, 0, 0, 50, 50);
         radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
-        stars = new Stars(this, 10, 10, 10);
+        stars = new Stars(this, 300, 300, 10);
 
         //colorMode(HSB, 255, 255, 255);
     }

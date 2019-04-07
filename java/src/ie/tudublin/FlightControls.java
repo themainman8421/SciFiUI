@@ -10,7 +10,7 @@ public class FlightControls
     private float width;
     private float height;
     UI ui;
-    private int HSB;
+    
 
     
 

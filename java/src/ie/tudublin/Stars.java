@@ -24,7 +24,7 @@ public class Stars
     public void render()
     {
         
-
+        /*
             for(int i = 0 ; i < 38 ; i ++)
 		{
 			for(int j = 0 ; j < 38 ; j ++)
@@ -34,7 +34,13 @@ public class Stars
                 float y = radius + (j * 21);
 				ui.ellipse(x, y, diameter, diameter);
 			}
-		}
+        }
+        */
+        ui.ellipse(x, y, diameter, diameter);
+        ui.ellipse(x + 50, y + 20 , diameter, diameter);
+        ui.ellipse(x + 150, y + 100, diameter, diameter);
+        ui.ellipse(x + 100, y + 150, diameter, diameter);
+        ui.ellipse(x - 50, y, diameter, diameter);
             
             
 	
@@ -54,14 +60,14 @@ public class Stars
         if (ui.checkKey('a'))
 		{
 			
-            x -= 20;
+            x -= 5;
             
         
         }
 
         if (ui.checkKey('d'))
         {
-            x += 0.1f;
+            x += 5;
         }
 	}
 
