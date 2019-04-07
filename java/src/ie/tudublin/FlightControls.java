@@ -10,6 +10,7 @@ public class FlightControls
     private float width;
     private float height;
     UI ui;
+    private int HSB;
 
     
 
@@ -31,18 +32,30 @@ public class FlightControls
         //ui.fill(value, 255, 255);
         ui.rect(50  , 600, 150, 150);
         ui.line(125, 600, 125, 750);
-        //ui.fill(value, 255, 255); 
-        ui.line(50, a + 700, 125, a + 700);
-        ui.line(125, b + 700, 200, b + 700);
+        ui.fill(45, 249, 61);
+        //ui.line(50, a + 700, 125, a + 700);
+        //ui.line(125, b + 700, 200, b + 700);
+        ui.rect(50, 750, 75, a);
+        ui.rect(125, 750, 75, b);
     }
 
     public void update()
     {
         if (ui.checkKey('a'))
 		{
-			
-            a += 5;
-            b -= 5;
+            if(a < 750)
+            {
+                a += 5;    
+                
+            }
+            //a += 5;
+            if(b < 750)
+            {
+                b -= 5;    
+            }
+            //b -= 5;
+
+            
             
             
         
@@ -74,7 +87,7 @@ public class FlightControls
                 
             
         }
-        //value = (int) (b % 255);
+        value = (int) (a % value);
         
     }
 
