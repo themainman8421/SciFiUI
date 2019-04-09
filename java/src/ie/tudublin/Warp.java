@@ -40,10 +40,10 @@ public class Warp
         
         if ((ui.mouseX > x + 50 && ui.mouseX < x + width))
         {
-            if ((ui.mouseY - y) % (height) < height)
+            if ((ui.mouseY - y) % (height) < width)
             {
-                which = (int) ((ui.mouseY - x) / (height));
-                System.out.println("hi");
+                which = (int) ((ui.mouseY - x) / (width));
+                System.out.println("warp activated");
             }
         }
 

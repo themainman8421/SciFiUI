@@ -67,6 +67,7 @@ public class UI extends PApplet
           flight.update();
 
           warp.render();
+          warp.update();
 
           radar.render();
           radar.update();
