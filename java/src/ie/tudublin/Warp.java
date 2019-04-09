@@ -38,12 +38,17 @@ public class Warp
     {
         int which = -1;
         
-        if ((ui.mouseX > x + 50 && ui.mouseX < x + width))
+        if (ui.mouseX > x + 50  && ui.mouseX < x + 150)
         {
-            if ((ui.mouseY - y) % (height) < width)
+            //ui.ellipse(x, y, 50, 50);
+            //System.out.println("warp activated");
+            
+            if ((ui.mouseY) % (width) > height)
             {
-                which = (int) ((ui.mouseY - x) / (width));
+               // which = (int) ((ui.mouseY - x) / (width));
                 System.out.println("warp activated");
+                ui.ellipse(x, y, 50, 50);
+                
             }
         }
 
