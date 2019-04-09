@@ -43,7 +43,7 @@ public class UI extends PApplet
         //b = new Button(this, 50, 50, 100, 50, "I am a button");
        // mc = new MovingCircle(this, width / 2, height / 2, 50);
         design = new Design(this, 50, 50, 50, 50);
-        orientation = new Orientation(this, 0, 0, 200, "0");
+        orientation = new Orientation(this, 0, 0, 200, "0", "90", "180", "270");
         flight = new FlightControls(this, 0, 0, 50, 50);
         radar = new Radar(this, 700, 650, 100);
         warp = new Warp(this, 300, 50, 100, 50, "WARP");
