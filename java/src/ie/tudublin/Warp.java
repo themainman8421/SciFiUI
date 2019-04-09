@@ -1,6 +1,5 @@
 package ie.tudublin;
 
-
 import processing.core.PApplet;
 import processing.core.PVector;
 
@@ -34,9 +33,12 @@ public class Warp
         ui.text(text, x + width, y + height * 0.5f);
     }
 
+
+
+
     public void update()
     {
-        int which = -1;
+        //int which = -1;
         
         if (ui.mouseX > x + 50  && ui.mouseX < x + 150)
         {
@@ -45,7 +47,7 @@ public class Warp
             
             if ((ui.mouseY) % (width) > height)
             {
-               // which = (int) ((ui.mouseY - x) / (width));
+                //which = (int) ((ui.mouseY - x) / (width));
                 System.out.println("warp activated");
                 ui.ellipse(x, y, 50, 50);
                 
