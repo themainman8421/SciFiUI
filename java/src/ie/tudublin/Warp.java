@@ -34,6 +34,22 @@ public class Warp
         ui.text(text, x + width, y + height * 0.5f);
     }
 
+    public void update()
+    {
+        int which = -1;
+        
+        if ((ui.mouseX > x + 50 && ui.mouseX < x + width))
+        {
+            if ((ui.mouseY - y) % (height) < height)
+            {
+                which = (int) ((ui.mouseY - x) / (height));
+                System.out.println("hi");
+            }
+        }
+
+
+    }
+
     
 
     /**

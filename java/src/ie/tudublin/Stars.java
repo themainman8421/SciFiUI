@@ -8,7 +8,7 @@ public class Stars
     private float diameter;
     //private float stars;
     UI ui;
-    private float radius;
+    //private float radius;
 
     public Stars(UI ui, float x, float y, float diameter)
     {
@@ -17,7 +17,7 @@ public class Stars
         this.y = y;
         this.diameter = diameter;
         //this.stars = 20; 
-        radius = diameter / 2;      
+        //radius = diameter / 2;      
         
     }
 

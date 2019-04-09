@@ -44,11 +44,10 @@ public class Orientation
 
     public void update()
     {
-		if (ui.checkKey('a'))
-		{
-			
-			rotation -= 0.1f;
-        }
+			if (ui.checkKey('a'))
+			{
+				rotation -= 0.1f;
+    	}
 
         if (ui.checkKey('d'))
         {

@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class UI extends PApplet
 {
-    Button b;
+    //Button b;
     //MovingCircle mc;
     Design design;
     Orientation orientation;
@@ -40,7 +40,7 @@ public class UI extends PApplet
 
     public void setup()
     {
-        b = new Button(this, 50, 50, 100, 50, "I am a button");
+        //b = new Button(this, 50, 50, 100, 50, "I am a button");
        // mc = new MovingCircle(this, width / 2, height / 2, 50);
         design = new Design(this, 50, 50, 50, 50);
         orientation = new Orientation(this, 0, 0, 200, "0");
