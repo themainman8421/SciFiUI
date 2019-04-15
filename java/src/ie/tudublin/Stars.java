@@ -23,7 +23,7 @@ public class Stars
 
     public void render()
     {
-        
+        /*
         
             for(int i = 0 ; i < 38 ; i ++)
 		{
@@ -36,15 +36,16 @@ public class Stars
 			}
         }
         
-        /*
-        ui.pushMatrix();
+        */
+        
         ui.ellipse(x, y, diameter, diameter);
         ui.ellipse(x + 50, y + 20 , diameter, diameter);
         ui.ellipse(x + 150, y + 100, diameter, diameter);
         ui.ellipse(x + 100, y + 150, diameter, diameter);
         ui.ellipse(x - 50, y, diameter, diameter);
-        ui.popMatrix();
-        */
+        
+        
+        
             
             
 	

@@ -54,31 +54,24 @@ public class UI extends PApplet
 
     public void draw()
     {
-         background(0);
+        background(0);
 
-         stars.render();
-         stars.update();
+        stars.render();
+        stars.update();
 
-         design.render();
+        design.render();
         
-        
+        flight.render();
+        flight.update();
 
-          flight.render();
-          flight.update();
+        warp.render();
+        warp.update();
 
-          warp.render();
-          warp.update();
+        radar.render();
+        radar.update();
 
-          radar.render();
-          radar.update();
-
-          orientation.render();
-          orientation.update();
-
-        
-        
-
-
+        orientation.render();
+        orientation.update();
         
     }
 }

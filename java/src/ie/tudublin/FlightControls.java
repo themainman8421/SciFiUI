@@ -43,17 +43,17 @@ public class FlightControls
     {
         if (ui.checkKey('a'))
 		{
-            if(a < 750)
-            {
+            
+            
                 a += 5;    
                 
-            }
-            //a += 5;
-            if(b < 750)
-            {
+            
+            
+            
+            
                 b -= 5;    
-            }
-            //b -= 5;
+            
+            
 
             
             
