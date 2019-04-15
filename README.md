@@ -1,16 +1,28 @@
 # SciFi UI Project
 
-Name:
+Name: James Behan
 
-Student Number: 
+Student Number: C17348016
 
 Fork this repository and use it a starter project for your assignment
 
 # Description of the assignment
 
+It is a simple design of how a spaceship UI would work and look 
+
 # Instructions
 
+Use the WASD keys to move the space ship in he direction you want to go 
+
 # How it works
+
+The W key will make the ship move forward. 
+
+The A key will make the ship turn left.
+
+The S key will make the ship stop. 
+
+The D key will make the ship turn right 
 
 # What I am most proud of in the assignment
 
