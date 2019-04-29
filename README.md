@@ -69,7 +69,7 @@ This is what creates the stars the user sees outside the ship. When the ship mov
 
 # What I am most proud of in the assignment
 
-The thing that i am most proud of from this assignment is  
+The thing that i am most proud of from this assignment is being able to use most things that have been thought throughout the course in a nice and simplstic way to create something that i can say is mine and not someone elses work. it also helped me understand some concepts such that the order in which classes get displayed matter as if they are in the wrong order certain classes will overlap another and not be visable. Without the use of the push and pop matrix almost everything will get controled by the rotion method cause more trouble then needs be. Even though i had trouble here and there with certain things i has fun creating this UI which made it okay to have some troubles.   
 
 # Markdown Tutorial
 
