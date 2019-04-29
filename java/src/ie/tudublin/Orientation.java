@@ -37,24 +37,18 @@ public class Orientation
 
     public void render()
     {
-			//ui.pushMatrix();
-			ui.translate(pos.x + ui.width / 2 , pos.y + 650);
 			
+			ui.translate(pos.x + ui.width / 2 , pos.y + 650);
 			ui.ellipse(x, y, diameter, diameter);
 			ui.pushMatrix();
 			ui.rotate(rotation);
 			ui.line(x, y, radius - 30, radius - 30);
 			ui.popMatrix();
-			//ui.fill(0);
 			ui.textAlign(PApplet.CENTER, PApplet.CENTER);
 			ui.text(text1, x, y - radius - 10);
 			ui.text(text2, x + radius + 10, y);
 			ui.text(text3, x, y + radius + 10);
-			ui.text(text4, x - radius - 10, y);
-			//ui.popMatrix();
-
-			
-         
+			ui.text(text4, x - radius - 10, y);   
     }
 
     public void update()
