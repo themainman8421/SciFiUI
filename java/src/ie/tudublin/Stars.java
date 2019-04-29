@@ -39,10 +39,20 @@ public class Stars
         */
         
         ui.ellipse(x, y, diameter, diameter);
-        ui.ellipse(x + 50, y + 20 , diameter, diameter);
+        ui.ellipse(x + 50, y + 40 , diameter, diameter);
         ui.ellipse(x + 150, y + 100, diameter, diameter);
         ui.ellipse(x + 100, y + 150, diameter, diameter);
+        ui.ellipse(x - 50, y + 75, diameter, diameter);
+        ui.ellipse(x - 75, y, diameter, diameter);
+        ui.ellipse(x + 75, y + 10, diameter, diameter);
+        ui.ellipse(x + 400, y, diameter, diameter);
+        ui.ellipse(x - 200, y + 20, diameter, diameter);
+        ui.ellipse(x + 350, y, diameter, diameter);
+        ui.ellipse(x + 200, y + 10, diameter, diameter);
+        ui.ellipse(x + 300, y + 20, diameter, diameter);
+        ui.ellipse(x + 225, y + 125, diameter, diameter);
         ui.ellipse(x - 50, y, diameter, diameter);
+
         
         
         
@@ -73,6 +83,23 @@ public class Stars
         if (ui.checkKey('d'))
         {
             x += 5;
+        }
+
+        if (x < 0)
+        {
+            x = ui.width;
+        }
+        if (x > ui.width)
+        {
+            x = 0;
+        }
+        if (y < 0)
+        {
+            y = ui.height;
+        }
+        if (y > ui.height)
+        {
+            y = 0;
         }
 	}
 

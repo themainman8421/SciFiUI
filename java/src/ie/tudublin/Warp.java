@@ -47,9 +47,10 @@ public class Warp
             
             if ((ui.mouseY > y && ui.mouseY < y + 50))
             {
+                
                 //which = (int) ((ui.mouseY - x) / (width));
                 System.out.println("warp activated");
-                ui.ellipse(x, y, 50, 50);
+                //ui.ellipse(x, y, 50, 50);
                 
             }
         }
