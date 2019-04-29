@@ -26,7 +26,17 @@ public class Stars
         ui.ellipse(x - 75, y, diameter, diameter);
         ui.ellipse(x + 75, y + 10, diameter, diameter);
         ui.ellipse(x + 400, y, diameter, diameter);
-        ui.ellipse(x - 200, y + 20, diameter, diameter);
+        ui.ellipse(x - 225, y + 40, diameter, diameter);
+        ui.ellipse(x - 286, y + 50, diameter, diameter);
+        ui.ellipse(x - 234, y + 10, diameter, diameter);
+        ui.ellipse(x - 275, y - 20, diameter, diameter);
+        ui.ellipse(x - 300, y + 20, diameter, diameter);
+        ui.ellipse(x - 200, y + 100, diameter, diameter);
+        ui.ellipse(x - 283, y + 70, diameter, diameter);
+        ui.ellipse(x - 159, y + 150, diameter, diameter);
+        ui.ellipse(x - 239, y + 26, diameter, diameter);
+        ui.ellipse(x - 341, y + 78, diameter, diameter);
+        ui.ellipse(x - 275, y + 167, diameter, diameter);
         ui.ellipse(x + 350, y, diameter, diameter);
         ui.ellipse(x + 200, y + 10, diameter, diameter);
         ui.ellipse(x + 300, y + 20, diameter, diameter);
