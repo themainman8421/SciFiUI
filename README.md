@@ -117,11 +117,6 @@ public void render()
 	ui.text(text, x + width * 0.5f, y + height * 0.5f);
 }
 ```
-
-This is an image using a relative URL:
-
-![An image](images/ship.png)
-
 This is an image using an absolute URL:
 
 ![A different image](https://i.gyazo.com/110978af347a442b48e44b8b9d268dda.png)
