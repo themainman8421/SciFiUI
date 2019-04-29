@@ -31,10 +31,8 @@ public class Radar
         ui.pushMatrix();
         ui.stroke(78, 243, 54);
         ui.translate(pos.x, pos.y);
-        //ui.stroke(255);
         ui.ellipse(x , y , diamater, diamater);
         ui.rotate(rotation);
-        //ui.stroke(255);
         ui.line(x, y, radius, radius - 40);
         ui.stroke(1);
         ui.fill(255);
