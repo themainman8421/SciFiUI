@@ -71,53 +71,7 @@ This is what creates the stars the user sees outside the ship. When the ship mov
 
 The thing that i am most proud of from this assignment is being able to use most things that have been thought throughout the course in a nice and simplstic way to create something that i can say is mine and not someone elses work. it also helped me understand some concepts such that the order in which classes get displayed matter as if they are in the wrong order certain classes will overlap another and not be visable. Without the use of the push and pop matrix almost everything will get controled by the rotion method cause more trouble then needs be. Even though i had trouble here and there with certain things i has fun creating this UI which made it okay to have some troubles.   
 
-# Markdown Tutorial
-
-This is *emphasis*
-
-This is a bulleted list
-
-- Item
-- Item
-
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
-```
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-This is an image using an absolute URL:
+# Image and Video 
 
 ![A different image](https://i.gyazo.com/110978af347a442b48e44b8b9d268dda.png)
 
@@ -125,12 +79,4 @@ This is a youtube video:
 
 [![YouTube](https://i.ytimg.com/vi/a7CjNLhmqGI/hqdefault.jpg)](https://www.youtube.com/watch?v=a7CjNLhmqGI&feature=youtu.be)
 
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
 
