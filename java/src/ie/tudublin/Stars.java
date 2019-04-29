@@ -51,21 +51,8 @@ public class Stars
         ui.ellipse(x + 200, y + 10, diameter, diameter);
         ui.ellipse(x + 300, y + 20, diameter, diameter);
         ui.ellipse(x + 225, y + 125, diameter, diameter);
-        ui.ellipse(x - 50, y, diameter, diameter);
-
-        
-        
-        
-            
-            
-	
-
-            
-            
-            
-            
-        
-    }
+        ui.ellipse(x - 50, y, diameter, diameter);    
+	}
 
     
 

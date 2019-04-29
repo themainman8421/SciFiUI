@@ -25,7 +25,7 @@ public class FlightControls
         
         
     }
-    int value = 0;
+    //int value = 0;
     public void render()
     {
         ui.fill(123);
@@ -87,7 +87,7 @@ public class FlightControls
                 
             
         }
-        value = (int) (a % value);
+        //value = (int) (a % value);
         
     }
 
