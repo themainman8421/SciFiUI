@@ -124,7 +124,7 @@ This is an image using a relative URL:
 
 This is an image using an absolute URL:
 
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
+![A different image](https://i.gyazo.com/110978af347a442b48e44b8b9d268dda.png)
 
 This is a youtube video:
 
