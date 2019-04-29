@@ -25,16 +25,12 @@ public class FlightControls
         
         
     }
-    //int value = 0;
     public void render()
     {
         ui.fill(123);
-        //ui.fill(value, 255, 255);
         ui.rect(50  , 600, 150, 150);
         ui.line(125, 600, 125, 750);
         ui.fill(45, 249, 61);
-        //ui.line(50, a + 700, 125, a + 700);
-        //ui.line(125, b + 700, 200, b + 700);
         ui.rect(50, 750, 75, a);
         ui.rect(125, 750, 75, b);
     }
@@ -43,22 +39,8 @@ public class FlightControls
     {
         if (ui.checkKey('a'))
 		{
-            
-            
                 a += 5;    
-                
-            
-            
-            
-            
                 b -= 5;    
-            
-            
-
-            
-            
-            
-        
         }
 
         if (ui.checkKey('d'))
@@ -76,19 +58,10 @@ public class FlightControls
 
         if (ui.checkKey('s'))
         {
-            if(b < 700)
-            {
                 
-                a += 5;
-                b += 5;
-            }
-            
-                
-                
-            
+            a += 5;
+            b += 5;   
         }
-        //value = (int) (a % value);
-        
     }
 
    

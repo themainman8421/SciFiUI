@@ -38,8 +38,6 @@ public class Warp
 
     public void update()
     {
-        //int which = -1;
-        
         if (ui.mouseX > x + 50  && ui.mouseX < x + 150)
         {
             if ((ui.mouseY > y && ui.mouseY < y + 50))
