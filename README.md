@@ -4,7 +4,6 @@ Name: James Behan
 
 Student Number: C17348016
 
-Fork this repository and use it a starter project for your assignment
 
 # Description of the assignment
 
@@ -12,13 +11,13 @@ It is a simple design of how a spaceship UI would work and look
 
 # Instructions
 
-Use the WASD keys to move the space ship in he direction you want to go.
+Use the WASD keys to move the space ship in the direction you want to go.
 
 Press the button to go into warp.
 
 # How it works
 
-To get the project to work i had to create 7 class.
+To get the project to work I had to create 7 class.
 
 These classes are: 
 - Design 
@@ -31,7 +30,7 @@ These classes are:
 
 *Design*
 
-The design class is the most basic of the classes. It created the initial layout of the ship eg where the control panels and screen will be. 
+The design class is the most basic of the classes. It created the initial layout of the ship e.g. where the control panels and screen will be. 
 
 *Flight controls* 
 
@@ -69,7 +68,7 @@ This is what creates the stars the user sees outside the ship. When the ship mov
 
 # What I am most proud of in the assignment
 
-The thing that i am most proud of from this assignment is being able to use most things that have been thought throughout the course in a nice and simplstic way to create something that i can say is mine and not someone elses work. it also helped me understand some concepts such that the order in which classes get displayed matter as if they are in the wrong order certain classes will overlap another and not be visable. Without the use of the push and pop matrix almost everything will get controled by the rotion method cause more trouble then needs be. Even though i had trouble here and there with certain things i has fun creating this UI which made it okay to have some troubles.   
+The thing that I am most proud of from this assignment is being able to use most things that have been thought throughout the course in a nice and simplistic way to create something that I can say is mine and not someone else's work. it also helped me understand some concepts such that the order in which classes get displayed matter as if they are in the wrong order certain classes will overlap another and not be visible. Without the use of the push and pop matrix almost everything will get controlled by the rotation method cause more trouble than needs be. Even though I had trouble here and there with certain things I has fun creating this UI which made it okay to have some troubles.   
 
 # Image and Video 
 
