@@ -33,7 +33,7 @@ These classes are:
 
 The design class is the most basic of the classes. It created the initial layout of the ship eg where the control panels and screen will be. 
 
-Flight controls 
+*Flight controls* 
 
 The flight controls class is one of the most important classes within the project. It lets the user to control how the ship moves and where it is looking. Without this class the ship wouldn’t know how fast it was going and which engines it was using.
 
